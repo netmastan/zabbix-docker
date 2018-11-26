@@ -1,7 +1,7 @@
 - hosts: localhost
   connection: local
   tasks:
-    - name: Create a new host or update an existing host's info
+    - name: Create a new host
       local_action:
         module: zabbix_host
         server_url: http://localhost/zabbix
