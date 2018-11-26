@@ -18,19 +18,19 @@ $ git clone https://github.com/paglasoft/zabbix-docker.git
 $ cd zabbix-docker
 
 # CD into the docker container code.
-cd /zabbix-docker
+$ cd /zabbix-docker
 
 # Build the contaienr code.
-docker build -t zabbix .
+$ docker build -t zabbix .
 
 # Run it!
-docker run --name zabbix -dit -p 80:80 -p 10051:10051 zabbix
+$ docker run --name zabbix -dit -p 80:80 -p 10051:10051 zabbix
 ```
 
 ## Access into Docker
 
 ```
-# docker exec -it containerid bash
+$ docker exec -it containerid bash
 
 ```
 # Ansible example - Creating Host in Zabbix and Downloading Template
