@@ -13,4 +13,4 @@
     - local_action: 
         module: copy 
         content: "{{ template_dump }}"
-        dest: '/Template_App_Zabbix_Agent.txt'
+        dest: '/export_zabbix_agent.template'
