@@ -1,14 +1,14 @@
-Docker Zabbix - Platform Monitoring
-==================================
+Docker Zabbix - Zabbix in a Single Container
+==========================================
 
 ## Platform Monitoring Container 
 
-A simple all in one Container:
+Zabbix all in one Container:
 
-* A *Zabbix Server* at port 10051.
-* A *Zabbix Web UI* at port 80 (e.g. `http://$container_ip/zabbix` ) user name: admin, Password: zabbix
-* A *Zabbix Agent*.
-* A MySQL supporting *Zabbix*, user is `zabbix` and password is `zabbix`.
+* Zabbix Server* at port 10051.
+* Zabbix Web UI* at port 80 (e.g. `http://$container_ip/zabbix` ) user name: admin, Password: zabbix
+* Zabbix Agent*.
+* A MySQL supporting Zabbix front-end, user is `zabbix` and password is `zabbix`.
 
 ## Building the Docker Zabbix Repository.
 
