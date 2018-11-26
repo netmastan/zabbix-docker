@@ -13,14 +13,19 @@ The container comes with the following component
 ## Building the Docker Zabbix Repository.
 
 ```
+# Clone Repo 
+$ git clone https://github.com/paglasoft/zabbix-docker.git
+$ cd zabbix-docker
+
 # CD into the docker container code.
-cd /docker-zabbix
+cd /zabbix-docker
+
 # Build the contaienr code.
 docker build -t zabbix .
+
 # Run it!
 docker run --name zabbix -dit -p 80:80 -p 10051:10051 zabbix
 ```
-
 
 ## Access into Docker
 
