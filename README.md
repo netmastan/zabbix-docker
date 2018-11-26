@@ -29,7 +29,7 @@ docker run --name zabbix -dit -p 80:80 -p 10051:10051 zabbix
 
 ```
 # Ansible example - Creating Host in Zabbix and Downloading Template
-
+```
 Login to container  then run the following command 
 
 To add Host - 'ansible-playbook add_host.yml'
