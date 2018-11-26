@@ -1,0 +1,16 @@
+- hosts: localhost
+  connection: local
+  tasks:
+    - name: Downloading Template 
+      local_action:
+        module: zabbix_template
+        server_url: http://localhost/zabbix
+        login_user: Admin
+        login_password: zabbix
+        template_name: Template App Zabbix Agent
+        state: dump
+      register: template_dump
+    - local_action: 
+        module: copy 
+        content: "{{ template_dump }}"
+        dest: '/Template_App_Zabbix_Agent.txt'

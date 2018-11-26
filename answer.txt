@@ -1,0 +1,3 @@
+Ansible would be a good choice for echo system. No need to write Python as Ansible already have lots of Zabbix Module 
+available. I didn't want to re-invent the wheel. I used Ansible module 'zabbix_template', it's easy to use all I needto supply
+Zabbix end point details.

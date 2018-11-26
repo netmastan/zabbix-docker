@@ -1,0 +1,29 @@
+- hosts: localhost
+  connection: local
+  tasks:
+    - name: Create a new host or update an existing host's info
+      local_action:
+        module: zabbix_host
+        server_url: http://localhost/zabbix
+        login_user: Admin
+        login_password: zabbix
+        host_name: testhost.nsw.education
+        host_groups:
+          - Linux servers
+        link_templates:
+          - Template OS Linux
+        status: enabled
+        state: present
+        interfaces:
+          - type: 1
+            main: 1
+            useip: 1
+            ip: 10.2.2.2
+            dns: ""
+            port: 10050
+          - type: 4
+            main: 1
+            useip: 1
+            ip: 10.3.3.3
+            dns: ""
+            port: 12345
