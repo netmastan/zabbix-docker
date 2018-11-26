@@ -1,9 +1,9 @@
 Docker Zabbix - Zabbix in a Single Container
 ==========================================
 
-## Platform Monitoring Container 
+## Zabbix Container 
 
-Zabbix all in one Container:
+The container comes with the following component
 
 * Zabbix Server* at port 10051.
 * Zabbix Web UI* at port 80 (e.g. `http://$container_ip/zabbix` ) user name: admin, Password: zabbix
@@ -22,7 +22,7 @@ docker run --name zabbix -dit -p 80:80 -p 10051:10051 zabbix
 ```
 
 
-## Exploring the Docker Zabbix Container
+## Access into Docker
 
 ```
 # docker exec -it containerid bash
