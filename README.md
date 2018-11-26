@@ -33,4 +33,4 @@ docker run --name zabbix -dit -p 80:80 -p 10051:10051 zabbix
 Login to container  then run the following command 
 
 To add Host - 'ansible-playbook add_host.yml'
-To download Template - 'ansible-playbook download_template.yml' ( the template will in / d)
+To download Template - 'ansible-playbook download_template.yml' ( the template will in '/' directory)
