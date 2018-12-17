@@ -15,7 +15,6 @@ The container comes with the following component
 ```
 # Clone Repo 
 $ git clone https://github.com/paglasoft/zabbix-docker.git
-$ cd zabbix-docker
 
 # CD into the docker container code.
 $ cd /zabbix-docker
